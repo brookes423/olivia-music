@@ -24,6 +24,33 @@ document.addEventListener('DOMContentLoaded', function() {
             // In future, you can add filtering functionality here
         });
     });
+    // ===== GENRE TABS FUNCTIONALITY =====
+document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching functionality
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and contents
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            // Show corresponding content
+            const genre = button.getAttribute('data-genre');
+            const tabToShow = document.getElementById(`${genre}-tab`);
+            if (tabToShow) {
+                tabToShow.classList.add('active');
+            }
+        });
+    });
+    
+    // Auto-add "Light it up!" to appropriate playlist (example logic)
+    console.log("Genre tabs system ready! Create SoundCloud playlists and add embed codes.");
+});
     
     // Form submission (for demo)
     const contactForm = document.querySelector('.contact-form');
@@ -52,4 +79,5 @@ document.addEventListener('DOMContentLoaded', function() {
         // You can add custom player controls here later
         console.log("Audio player ready!");
     }
+
 });
