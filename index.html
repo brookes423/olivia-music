@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia Brooke | Music Producer</title>
+    <title>Olivia Brooke | Music Producer & Ghost Producer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -26,7 +26,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>I CREATE <span class="highlight">EMOTION</span> THROUGH SOUND</h1>
-            <p>EDM • Techno • Trance • Trap • Lo-fi • Ghost Production • Vocals</p>
+            <p>EDM • Techno • Synth Wave • Trance • Trap • Lo-fi • Synth Pop • Ghost Production • Vocals</p>
             <div class="hero-buttons">
                 <a href="#work" class="btn-primary">Listen Now</a>
                 <a href="#contact" class="btn-secondary">Book a Session</a>
@@ -46,26 +46,31 @@
             <div class="genre-card" style="background: #f39c12;">Lo-fi</div>
             <div class="genre-card" style="background: #1abc9c;">Chillwave</div>
             <div class="genre-card" style="background: #8e44ad;">Gospel</div>
+            <div class="genre-card" style="background: #e74c3c;">Christmas</div>
+            <div class="genre-card" style="background: #16a085;">Meditation</div>
+            <div class="genre-card" style="background: linear-gradient(135deg, #FF4081, #FF9800);">Synth Pop</div>
+            <div class="genre-card" style="background: linear-gradient(135deg, #00BCD4, #3F51B5);">Synth Wave</div>
         </div>
     </section>
 
-    <!-- Real SoundCloud Integration -->
-<div class="soundcloud-player">
-    <h3><i class="fab fa-soundcloud"></i> Latest Tracks</h3>
-    
-    <!-- Option 1: SoundCloud Embed (Easiest) -->
-    <iframe 
-        width="100%" 
-        height="166" 
-        scrolling="no" 
-        frameborder="no" 
-        allow="autoplay"
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/&color=%236c5ce7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-    </iframe>
-    
-    <p class="player-note">More on my <a href="https://soundcloud.com/yourusername">SoundCloud</a> | 
-        Custom tracks available on <a href="https://fiverr.com/yourusername">Fiverr</a></p>
-</div>
+    <!-- Music Player Section -->
+    <section id="work" class="music-player">
+        <h2>🎵 LISTEN TO MY WORK</h2>
+        <div class="soundcloud-player">
+            <h3><i class="fab fa-soundcloud"></i> My Music on SoundCloud</h3>
+            
+            <!-- YOUR SOUNDCLOUD PLAYER -->
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A2245982255&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                <a href="https://soundcloud.com/oliviaabrookes10" title="Oliviaabrookes10" target="_blank" style="color: #cccccc; text-decoration: none;">Oliviaabrookes10</a> · 
+                <a href="https://soundcloud.com/oliviaabrookes10/light-it-up" title="Light it up!" target="_blank" style="color: #cccccc; text-decoration: none;">Light it up!</a>
+            </div>
+            
+            <p class="player-note">
+                Follow me on <a href="https://soundcloud.com/oliviaabrookes10">SoundCloud</a> | 
+                Custom tracks on <a href="https://fiverr.com/brooke_olivia">Fiverr</a>
+            </p>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -86,6 +91,10 @@
                     <option>Custom Track</option>
                     <option>Vocal Recording</option>
                     <option>Mixing/Mastering</option>
+                    <option>Synth Wave Track</option>
+                    <option>Synth Pop Production</option>
+                    <option>Christmas Song</option>
+                    <option>Meditation Music</option>
                 </select>
                 <textarea placeholder="Tell me about your project..." rows="4"></textarea>
                 <button type="submit">Send Message</button>
