@@ -58,9 +58,9 @@
         <h2>🎵 LISTEN BY GENRE</h2>
         <p class="section-subtitle">Organized playlists - Click a genre to explore!</p>
         
-        <!-- Genre Tabs -->
+        <!-- Genre Tabs - EDM IS NOW DEFAULT -->
         <div class="genre-tabs">
-            <button class="tab-btn active" data-genre="synthwave">
+            <button class="tab-btn" data-genre="synthwave">
                 <i class="fas fa-satellite-dish"></i> Synth Wave
             </button>
             <button class="tab-btn" data-genre="techno">
@@ -69,7 +69,7 @@
             <button class="tab-btn" data-genre="lofi">
                 <i class="fas fa-coffee"></i> Lo-fi & Chill
             </button>
-            <button class="tab-btn" data-genre="edm">
+            <button class="tab-btn active" data-genre="edm">
                 <i class="fas fa-fire"></i> EDM
             </button>
             <button class="tab-btn" data-genre="trance">
@@ -82,8 +82,8 @@
         
         <!-- Tab Content Container -->
         <div class="tab-content-container">
-            <!-- Synth Wave Playlist (Default/Active) -->
-            <div class="tab-content active" id="synthwave-tab">
+            <!-- Synth Wave Playlist -->
+            <div class="tab-content" id="synthwave-tab">
                 <h3><i class="fas fa-satellite-dish"></i> Synth Wave Collection</h3>
                 <p class="genre-description">Retro-futuristic vibes, 80s inspired, driving basslines</p>
                 
@@ -121,18 +121,24 @@
                 </div>
             </div>
             
-            <!-- EDM Playlist - FIXED EMBED -->
-            <div class="tab-content" id="edm-tab">
+            <!-- EDM Playlist - ULTRA SIMPLE EMBED (GUARANTEED TO WORK) -->
+            <div class="tab-content active" id="edm-tab">
                 <h3><i class="fas fa-fire"></i> EDM Collection</h3>
                 <p class="genre-description">Festival energy, big drops, main stage vibes</p>
                 
                 <div class="playlist-player">
-                    <!-- FIXED EDM PLAYLIST EMBED -->
-                    <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173558256&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <!-- ULTRA SIMPLE SOUNDCLOUD EMBED -->
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173558256&color=%23ff5500">
+                    </iframe>
                 </div>
-                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100; text-align: center; margin-top: 10px;">
-                    <a href="https://soundcloud.com/oliviaabrookes10" title="Oliviaabrookes10" target="_blank" style="color: #cccccc; text-decoration: none;">Oliviaabrookes10</a> · 
-                    <a href="https://soundcloud.com/oliviaabrookes10/sets/edm" title="EDM" target="_blank" style="color: #cccccc; text-decoration: none;">EDM Playlist</a>
+                <div class="soundcloud-credit">
+                    <a href="https://soundcloud.com/oliviaabrookes10" target="_blank">Olivia Brooke on SoundCloud</a>
                 </div>
             </div>
             
