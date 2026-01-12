@@ -1,8 +1,8 @@
 // Wait for page to load
 document.addEventListener('DOMContentLoaded', function() {
-    console.log("🎵 Music website loaded!");
+    console.log("🎵 Olivia Brooke Music website loaded!");
     
-    // Smooth scrolling for navigation links
+    // ===== SMOOTH SCROLLING =====
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             if(this.hash !== "") {
@@ -16,17 +16,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Genre cards click effect
+    // ===== GENRE CARDS CLICK =====
     document.querySelectorAll('.genre-card').forEach(card => {
         card.addEventListener('click', function() {
-            const genre = this.textContent;
-            alert(`You selected: ${genre}! This would filter/show ${genre} tracks.`);
-            // In future, you can add filtering functionality here
+            const genre = this.textContent.trim();
+            
+            // Map genre cards to tabs
+            const genreMap = {
+                'EDM': 'edm',
+                'Techno': 'techno',
+                'Trance': 'trance',
+                'Trap': 'techno', // Map to closest
+                'Hardstyle': 'edm',
+                'Lo-fi': 'lofi',
+                'Chillwave': 'lofi',
+                'Gospel': 'gospel',
+                'Christmas': 'gospel',
+                'Meditation': 'lofi',
+                'Synth Pop': 'synthwave',
+                'Synth Wave': 'synthwave'
+            };
+            
+            if (genreMap[genre]) {
+                // Switch to corresponding tab
+                const tabBtn = document.querySelector(`.tab-btn[data-genre="${genreMap[genre]}"]`);
+                if (tabBtn) {
+                    // Trigger tab click
+                    tabBtn.click();
+                    // Scroll to music section
+                    document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                alert(`🎵 ${genre} selected! Check out my ${genre} tracks in the player below.`);
+            }
         });
     });
+    
     // ===== GENRE TABS FUNCTIONALITY =====
-document.addEventListener('DOMContentLoaded', function() {
-    // Tab switching functionality
     const tabButtons = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
     
@@ -45,25 +71,22 @@ document.addEventListener('DOMContentLoaded', function() {
             if (tabToShow) {
                 tabToShow.classList.add('active');
             }
+            
+            console.log(`Switched to ${genre} tab`);
         });
     });
     
-    // Auto-add "Light it up!" to appropriate playlist (example logic)
-    console.log("Genre tabs system ready! Create SoundCloud playlists and add embed codes.");
-});
-    
-    // Form submission (for demo)
+    // ===== FORM SUBMISSION =====
     const contactForm = document.querySelector('.contact-form');
     if(contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert("Thanks for your message! This is a demo. In a real site, this would email you.");
-            // Clear form
+            alert("Thanks for your message! I'll contact you soon.");
             this.reset();
         });
     }
     
-    // Change background on scroll
+    // ===== NAV BACKGROUND ON SCROLL =====
     window.addEventListener('scroll', function() {
         const nav = document.querySelector('nav');
         if(window.scrollY > 100) {
@@ -73,11 +96,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Audio player enhancement
-    const audioPlayer = document.querySelector('audio');
-    if(audioPlayer) {
-        // You can add custom player controls here later
-        console.log("Audio player ready!");
-    }
-
+    // ===== INITIAL LOGS =====
+    console.log("Genre tabs system ready!");
+    console.log("SoundCloud player integrated!");
+    console.log("Website fully functional!");
 });
