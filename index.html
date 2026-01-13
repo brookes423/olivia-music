@@ -58,53 +58,110 @@
         <h2>🎵 LISTEN BY GENRE</h2>
         <p class="section-subtitle">Organized playlists - Click a genre to explore!</p>
         
-        <!-- Genre Tabs - EDM IS NOW DEFAULT -->
+        <!-- Genre Tabs - UPDATED WITH ALL GENRES -->
         <div class="genre-tabs">
             <button class="tab-btn" data-genre="synthwave">
                 <i class="fas fa-satellite-dish"></i> Synth Wave
             </button>
+            <button class="tab-btn" data-genre="synthpop">
+                <i class="fas fa-moon"></i> Synth Pop
+            </button>
             <button class="tab-btn" data-genre="techno">
                 <i class="fas fa-bolt"></i> Techno
-            </button>
-            <button class="tab-btn" data-genre="lofi">
-                <i class="fas fa-coffee"></i> Lo-fi & Chill
             </button>
             <button class="tab-btn active" data-genre="edm">
                 <i class="fas fa-fire"></i> EDM
             </button>
+            <button class="tab-btn" data-genre="lofi">
+                <i class="fas fa-coffee"></i> Lo-fi & Chill
+            </button>
+            <button class="tab-btn" data-genre="gospel">
+                <i class="fas fa-star"></i> Gospel
+            </button>
             <button class="tab-btn" data-genre="trance">
                 <i class="fas fa-cloud"></i> Trance
             </button>
-            <button class="tab-btn" data-genre="gospel">
-                <i class="fas fa-star"></i> Christmas & Gospel
-            </button>
         </div>
         
-        <!-- Tab Content Container -->
+        <!-- Tab Content Container - ALL PLAYLISTS ADDED -->
         <div class="tab-content-container">
-            <!-- Synth Wave Playlist -->
+            <!-- Synth Wave Playlist - ADDED -->
             <div class="tab-content" id="synthwave-tab">
                 <h3><i class="fas fa-satellite-dish"></i> Synth Wave Collection</h3>
                 <p class="genre-description">Retro-futuristic vibes, 80s inspired, driving basslines</p>
                 
                 <div class="playlist-player">
-                    <div class="playlist-placeholder">
-                        <p>🎹 Creating Synth Wave playlist...</p>
-                        <p><i>Coming soon! Add Synth Wave tracks to SoundCloud</i></p>
-                    </div>
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173825856&color=%2300BCD4">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Neon Horizon" - Atmospheric synth journey</p>
                 </div>
             </div>
             
-            <!-- Techno Playlist -->
-            <div class="tab-content" id="techno-tab">
-                <h3><i class="fas fa-bolt"></i> Techno Collection</h3>
-                <p class="genre-description">Driving beats, industrial sounds, club-ready</p>
+            <!-- Synth Pop Playlist - ADDED -->
+            <div class="tab-content" id="synthpop-tab">
+                <h3><i class="fas fa-moon"></i> Synth Pop Collection</h3>
+                <p class="genre-description">Catchy melodies, pop structures with synth textures</p>
                 
                 <div class="playlist-player">
-                    <div class="playlist-placeholder">
-                        <p>⚡ Creating Techno playlist...</p>
-                        <p><i>Coming soon! Add Techno tracks to SoundCloud</i></p>
-                    </div>
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173825127&color=%23FF4081">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "After Light" - Melodic synth pop adventure</p>
+                </div>
+            </div>
+            
+            <!-- Techno Playlist - ADDED -->
+            <div class="tab-content" id="techno-tab">
+                <h3><i class="fas fa-bolt"></i> Techno Collection</h3>
+                <p class="genre-description">Driving beats, industrial sounds, club-ready energy</p>
+                
+                <div class="playlist-player">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173848200&color=%232ecc71">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Voltage Rage" - High-energy techno banger</p>
+                </div>
+            </div>
+            
+            <!-- EDM Playlist -->
+            <div class="tab-content active" id="edm-tab">
+                <h3><i class="fas fa-fire"></i> EDM Collection</h3>
+                <p class="genre-description">Festival energy, big drops, main stage vibes</p>
+                
+                <div class="playlist-player">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173558256&color=%23ff5500">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Light it up!" - EDM anthem with powerful energy</p>
                 </div>
             </div>
             
@@ -116,55 +173,47 @@
                 <div class="playlist-player">
                     <div class="playlist-placeholder">
                         <p>☕ Creating Lo-fi playlist...</p>
-                        <p><i>Coming soon! Add Lo-fi tracks to SoundCloud</i></p>
+                        <p><i>Coming soon! Lo-fi and chill tracks in production</i></p>
                     </div>
+                </div>
+                <div class="track-info">
+                    <p><strong>Coming Soon:</strong> Relaxing beats for focus and relaxation</p>
                 </div>
             </div>
             
-            <!-- EDM Playlist - ULTRA SIMPLE EMBED (GUARANTEED TO WORK) -->
-            <div class="tab-content active" id="edm-tab">
-                <h3><i class="fas fa-fire"></i> EDM Collection</h3>
-                <p class="genre-description">Festival energy, big drops, main stage vibes</p>
+            <!-- Gospel Playlist - ADDED -->
+            <div class="tab-content" id="gospel-tab">
+                <h3><i class="fas fa-star"></i> Gospel & Christmas Collection</h3>
+                <p class="genre-description">Inspirational, festive, uplifting spiritual music</p>
                 
                 <div class="playlist-player">
-                    <!-- ULTRA SIMPLE SOUNDCLOUD EMBED -->
                     <iframe 
                         width="100%" 
                         height="300" 
                         scrolling="no" 
                         frameborder="no" 
                         allow="autoplay"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173558256&color=%23ff5500">
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173840850&color=%238e44ad">
                     </iframe>
                 </div>
-                <div class="soundcloud-credit">
-                    <a href="https://soundcloud.com/oliviaabrookes10" target="_blank">Olivia Brooke on SoundCloud</a>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Called by Grace" - Uplifting gospel inspiration</p>
                 </div>
             </div>
             
             <!-- Trance Playlist -->
             <div class="tab-content" id="trance-tab">
                 <h3><i class="fas fa-cloud"></i> Trance Collection</h3>
-                <p class="genre-description">Euphoric melodies, uplifting progressions</p>
+                <p class="genre-description">Euphoric melodies, uplifting progressions, emotional journeys</p>
                 
                 <div class="playlist-player">
                     <div class="playlist-placeholder">
                         <p>☁️ Creating Trance playlist...</p>
-                        <p><i>Coming soon! Add Trance tracks to SoundCloud</i></p>
+                        <p><i>Coming soon! Trance tracks in production</i></p>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Gospel Playlist -->
-            <div class="tab-content" id="gospel-tab">
-                <h3><i class="fas fa-star"></i> Christmas & Gospel Collection</h3>
-                <p class="genre-description">Inspirational, festive, uplifting spiritual music</p>
-                
-                <div class="playlist-player">
-                    <div class="playlist-placeholder">
-                        <p>⭐ Creating Gospel/Christmas playlist...</p>
-                        <p><i>Coming soon! Add Gospel tracks to SoundCloud</i></p>
-                    </div>
+                <div class="track-info">
+                    <p><strong>Coming Soon:</strong> Euphoric trance melodies and uplifting beats</p>
                 </div>
             </div>
         </div>
@@ -172,16 +221,19 @@
         <!-- Auto-Update Note -->
         <div class="auto-update-note">
             <p><i class="fas fa-sync-alt"></i> <strong>Auto-Update Feature:</strong> When I add tracks to SoundCloud playlists, they automatically appear here!</p>
-            <p><i class="fas fa-magic"></i> <strong>Organized Listening:</strong> Browse by genre or mood</p>
+            <p><i class="fas fa-music"></i> <strong>Now Playing:</strong> 4 complete genre collections + more coming!</p>
         </div>
         
         <!-- Links -->
         <div class="music-links">
             <a href="https://soundcloud.com/oliviaabrookes10" class="soundcloud-full">
-                <i class="fab fa-soundcloud"></i> Explore My Full SoundCloud
+                <i class="fab fa-soundcloud"></i> Follow on SoundCloud
             </a>
             <a href="https://fiverr.com/brooke_olivia" class="fiverr-full">
-                <i class="fab fa-fonticons-fi"></i> Order Custom Track on Fiverr
+                <i class="fab fa-fonticons-fi"></i> Hire on Fiverr
+            </a>
+            <a href="#contact" class="contact-link">
+                <i class="fas fa-envelope"></i> Contact Directly
             </a>
         </div>
     </section>
@@ -194,6 +246,18 @@
                 <h3><i class="fas fa-envelope"></i> Quick Contact</h3>
                 <p>Email: oliviaabrookes10@gmail.com</p>
                 <p>Fiverr: <a href="https://fiverr.com/brooke_olivia">fiverr.com/brooke_olivia</a></p>
+                <p>SoundCloud: <a href="https://soundcloud.com/oliviaabrookes10">@oliviaabrookes10</a></p>
+                
+                <div class="specialties">
+                    <h4><i class="fas fa-star"></i> Specialties:</h4>
+                    <ul>
+                        <li>Ghost Production</li>
+                        <li>Synth Wave & Synth Pop</li>
+                        <li>EDM & Techno</li>
+                        <li>Gospel & Christmas Music</li>
+                        <li>Custom Track Creation</li>
+                    </ul>
+                </div>
             </div>
             <form class="contact-form">
                 <input type="text" placeholder="Your Name" required>
@@ -202,14 +266,15 @@
                     <option value="">Select Service</option>
                     <option>Ghost Production</option>
                     <option>Custom Track</option>
-                    <option>Vocal Recording</option>
-                    <option>Mixing/Mastering</option>
                     <option>Synth Wave Track</option>
                     <option>Synth Pop Production</option>
-                    <option>Christmas Song</option>
-                    <option>Meditation Music</option>
+                    <option>Techno Track</option>
+                    <option>EDM Production</option>
+                    <option>Gospel/Christmas Song</option>
+                    <option>Mixing/Mastering</option>
+                    <option>Vocal Recording</option>
                 </select>
-                <textarea placeholder="Tell me about your project..." rows="4"></textarea>
+                <textarea placeholder="Tell me about your project (genre, mood, reference tracks)..." rows="4"></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
@@ -218,9 +283,12 @@
     <!-- Footer -->
     <footer>
         <p>© 2024 Olivia Brooke. All rights reserved. | 
-            <a href="https://fiverr.com/brooke_olivia">Fiverr Profile</a> | 
+            <a href="https://fiverr.com/brooke_olivia">Fiverr</a> • 
+            <a href="https://soundcloud.com/oliviaabrookes10">SoundCloud</a> • 
+            <a href="#contact">Contact</a> | 
             Made with ❤️ and 🔊
         </p>
+        <p class="footer-note">Professional Music Producer & Ghost Producer | EDM • Techno • Synth Wave • Gospel</p>
     </footer>
 
     <script src="script.js"></script>
