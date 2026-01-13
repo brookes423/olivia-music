@@ -21,16 +21,16 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function() {
             const genre = this.textContent.trim();
             
-            // Map genre cards to tabs - UPDATED FOR SYNTH POP
+            // Map genre cards to tabs - UPDATED WITH ALL 7 GENRES
             const genreMap = {
                 'EDM': 'edm',
                 'Techno': 'techno',
                 'Synth Wave': 'synthwave',
-                'Synth Pop': 'synthpop',  // FIXED: Now maps to synthpop tab
+                'Synth Pop': 'synthpop',
                 'Gospel': 'gospel',
                 'Christmas': 'gospel',
-                'Trance': 'trance',
-                'Trap': 'techno',
+                'Trance': 'trance',      // UPDATED: Now maps to trance tab
+                'Trap': 'trap',          // UPDATED: Now maps to trap tab
                 'Hardstyle': 'edm',
                 'Lo-fi': 'lofi',
                 'Chillwave': 'lofi',
@@ -96,8 +96,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+    // ===== AUTO-SCROLL TO MUSIC ON LOAD (Optional) =====
+    // If user clicks "Listen Now" button from other sites, scroll to music
+    if (window.location.hash === '#work') {
+        setTimeout(() => {
+            document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
+        }, 500);
+    }
+    
     // ===== INITIAL LOGS =====
     console.log("Genre tabs system ready!");
-    console.log("5 SoundCloud playlists integrated!");
+    console.log("7 SoundCloud playlists integrated!");
     console.log("Website fully functional with all genres!");
+    console.log("Genres available: EDM, Techno, Synth Wave, Synth Pop, Trap, Trance, Gospel");
 });
