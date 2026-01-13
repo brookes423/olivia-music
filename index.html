@@ -58,7 +58,7 @@
         <h2>🎵 LISTEN BY GENRE</h2>
         <p class="section-subtitle">Organized playlists - Click a genre to explore!</p>
         
-        <!-- Genre Tabs - UPDATED WITH ALL GENRES -->
+        <!-- Genre Tabs - ALL 7 GENRES -->
         <div class="genre-tabs">
             <button class="tab-btn" data-genre="synthwave">
                 <i class="fas fa-satellite-dish"></i> Synth Wave
@@ -72,20 +72,20 @@
             <button class="tab-btn active" data-genre="edm">
                 <i class="fas fa-fire"></i> EDM
             </button>
-            <button class="tab-btn" data-genre="lofi">
-                <i class="fas fa-coffee"></i> Lo-fi & Chill
-            </button>
-            <button class="tab-btn" data-genre="gospel">
-                <i class="fas fa-star"></i> Gospel
+            <button class="tab-btn" data-genre="trap">
+                <i class="fas fa-volume-up"></i> Trap
             </button>
             <button class="tab-btn" data-genre="trance">
                 <i class="fas fa-cloud"></i> Trance
             </button>
+            <button class="tab-btn" data-genre="gospel">
+                <i class="fas fa-star"></i> Gospel
+            </button>
         </div>
         
-        <!-- Tab Content Container - ALL PLAYLISTS ADDED -->
+        <!-- Tab Content Container - ALL 7 PLAYLISTS -->
         <div class="tab-content-container">
-            <!-- Synth Wave Playlist - ADDED -->
+            <!-- Synth Wave Playlist -->
             <div class="tab-content" id="synthwave-tab">
                 <h3><i class="fas fa-satellite-dish"></i> Synth Wave Collection</h3>
                 <p class="genre-description">Retro-futuristic vibes, 80s inspired, driving basslines</p>
@@ -105,7 +105,7 @@
                 </div>
             </div>
             
-            <!-- Synth Pop Playlist - ADDED -->
+            <!-- Synth Pop Playlist -->
             <div class="tab-content" id="synthpop-tab">
                 <h3><i class="fas fa-moon"></i> Synth Pop Collection</h3>
                 <p class="genre-description">Catchy melodies, pop structures with synth textures</p>
@@ -125,7 +125,7 @@
                 </div>
             </div>
             
-            <!-- Techno Playlist - ADDED -->
+            <!-- Techno Playlist -->
             <div class="tab-content" id="techno-tab">
                 <h3><i class="fas fa-bolt"></i> Techno Collection</h3>
                 <p class="genre-description">Driving beats, industrial sounds, club-ready energy</p>
@@ -165,23 +165,47 @@
                 </div>
             </div>
             
-            <!-- Lo-fi Playlist -->
-            <div class="tab-content" id="lofi-tab">
-                <h3><i class="fas fa-coffee"></i> Lo-fi & Chill Collection</h3>
-                <p class="genre-description">Relaxing beats, study music, chill vibes</p>
+            <!-- Trap Playlist - ADDED -->
+            <div class="tab-content" id="trap-tab">
+                <h3><i class="fas fa-volume-up"></i> Trap Collection</h3>
+                <p class="genre-description">Heavy 808s, aggressive beats, hip-hop influenced</p>
                 
                 <div class="playlist-player">
-                    <div class="playlist-placeholder">
-                        <p>☕ Creating Lo-fi playlist...</p>
-                        <p><i>Coming soon! Lo-fi and chill tracks in production</i></p>
-                    </div>
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173868054&color=%239b59b6">
+                    </iframe>
                 </div>
                 <div class="track-info">
-                    <p><strong>Coming Soon:</strong> Relaxing beats for focus and relaxation</p>
+                    <p><strong>Featured Track:</strong> "Own the Vibe" - Confident trap energy with attitude</p>
                 </div>
             </div>
             
-            <!-- Gospel Playlist - ADDED -->
+            <!-- Trance Playlist - ADDED -->
+            <div class="tab-content" id="trance-tab">
+                <h3><i class="fas fa-cloud"></i> Trance Collection</h3>
+                <p class="genre-description">Euphoric melodies, uplifting progressions, emotional journeys</p>
+                
+                <div class="playlist-player">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2173878503&color=%233498db">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Into the Light" - Uplifting trance with euphoric melodies</p>
+                </div>
+            </div>
+            
+            <!-- Gospel Playlist -->
             <div class="tab-content" id="gospel-tab">
                 <h3><i class="fas fa-star"></i> Gospel & Christmas Collection</h3>
                 <p class="genre-description">Inspirational, festive, uplifting spiritual music</p>
@@ -200,28 +224,12 @@
                     <p><strong>Featured Track:</strong> "Called by Grace" - Uplifting gospel inspiration</p>
                 </div>
             </div>
-            
-            <!-- Trance Playlist -->
-            <div class="tab-content" id="trance-tab">
-                <h3><i class="fas fa-cloud"></i> Trance Collection</h3>
-                <p class="genre-description">Euphoric melodies, uplifting progressions, emotional journeys</p>
-                
-                <div class="playlist-player">
-                    <div class="playlist-placeholder">
-                        <p>☁️ Creating Trance playlist...</p>
-                        <p><i>Coming soon! Trance tracks in production</i></p>
-                    </div>
-                </div>
-                <div class="track-info">
-                    <p><strong>Coming Soon:</strong> Euphoric trance melodies and uplifting beats</p>
-                </div>
-            </div>
         </div>
         
         <!-- Auto-Update Note -->
         <div class="auto-update-note">
             <p><i class="fas fa-sync-alt"></i> <strong>Auto-Update Feature:</strong> When I add tracks to SoundCloud playlists, they automatically appear here!</p>
-            <p><i class="fas fa-music"></i> <strong>Now Playing:</strong> 4 complete genre collections + more coming!</p>
+            <p><i class="fas fa-music"></i> <strong>Now Playing:</strong> 7 complete genre collections with featured tracks!</p>
         </div>
         
         <!-- Links -->
@@ -254,6 +262,7 @@
                         <li>Ghost Production</li>
                         <li>Synth Wave & Synth Pop</li>
                         <li>EDM & Techno</li>
+                        <li>Trap & Trance</li>
                         <li>Gospel & Christmas Music</li>
                         <li>Custom Track Creation</li>
                     </ul>
@@ -270,6 +279,8 @@
                     <option>Synth Pop Production</option>
                     <option>Techno Track</option>
                     <option>EDM Production</option>
+                    <option>Trap Beat</option>
+                    <option>Trance Track</option>
                     <option>Gospel/Christmas Song</option>
                     <option>Mixing/Mastering</option>
                     <option>Vocal Recording</option>
@@ -288,7 +299,7 @@
             <a href="#contact">Contact</a> | 
             Made with ❤️ and 🔊
         </p>
-        <p class="footer-note">Professional Music Producer & Ghost Producer | EDM • Techno • Synth Wave • Gospel</p>
+        <p class="footer-note">Professional Music Producer & Ghost Producer | 7+ Genre Specialist</p>
     </footer>
 
     <script src="script.js"></script>
