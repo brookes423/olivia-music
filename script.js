@@ -21,20 +21,20 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function() {
             const genre = this.textContent.trim();
             
-            // Map genre cards to tabs
+            // Map genre cards to tabs - UPDATED FOR SYNTH POP
             const genreMap = {
                 'EDM': 'edm',
                 'Techno': 'techno',
+                'Synth Wave': 'synthwave',
+                'Synth Pop': 'synthpop',  // FIXED: Now maps to synthpop tab
+                'Gospel': 'gospel',
+                'Christmas': 'gospel',
                 'Trance': 'trance',
-                'Trap': 'techno', // Map to closest
+                'Trap': 'techno',
                 'Hardstyle': 'edm',
                 'Lo-fi': 'lofi',
                 'Chillwave': 'lofi',
-                'Gospel': 'gospel',
-                'Christmas': 'gospel',
-                'Meditation': 'lofi',
-                'Synth Pop': 'synthwave',
-                'Synth Wave': 'synthwave'
+                'Meditation': 'lofi'
             };
             
             if (genreMap[genre]) {
@@ -98,6 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ===== INITIAL LOGS =====
     console.log("Genre tabs system ready!");
-    console.log("SoundCloud player integrated!");
-    console.log("Website fully functional!");
+    console.log("5 SoundCloud playlists integrated!");
+    console.log("Website fully functional with all genres!");
 });
