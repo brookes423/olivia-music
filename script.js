@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('click', function() {
             const genre = this.textContent.trim();
             
-            // Map genre cards to tabs - UPDATED WITH ALL 7 GENRES
+            // Map genre cards to tabs - UPDATED WITH ALL 8 GENRES
             const genreMap = {
                 'EDM': 'edm',
                 'Techno': 'techno',
@@ -29,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 'Synth Pop': 'synthpop',
                 'Gospel': 'gospel',
                 'Christmas': 'gospel',
-                'Trance': 'trance',      // UPDATED: Now maps to trance tab
-                'Trap': 'trap',          // UPDATED: Now maps to trap tab
+                'Trance': 'trance',
+                'Trap': 'trap',
                 'Hardstyle': 'edm',
-                'Lo-fi': 'lofi',
+                'Lo-fi': 'lofi',          // UPDATED: Now maps to lofi tab (has playlist)
                 'Chillwave': 'lofi',
                 'Meditation': 'lofi'
             };
@@ -96,8 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ===== AUTO-SCROLL TO MUSIC ON LOAD (Optional) =====
-    // If user clicks "Listen Now" button from other sites, scroll to music
+    // ===== AUTO-SCROLL TO MUSIC ON LOAD =====
     if (window.location.hash === '#work') {
         setTimeout(() => {
             document.getElementById('work').scrollIntoView({ behavior: 'smooth' });
@@ -106,7 +105,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // ===== INITIAL LOGS =====
     console.log("Genre tabs system ready!");
-    console.log("7 SoundCloud playlists integrated!");
+    console.log("8 SoundCloud playlists integrated!");
     console.log("Website fully functional with all genres!");
-    console.log("Genres available: EDM, Techno, Synth Wave, Synth Pop, Trap, Trance, Gospel");
+    console.log("Genres available: EDM, Techno, Synth Wave, Synth Pop, Trap, Trance, Lo-fi, Gospel");
+    console.log("Featured tracks: Light it up!, Voltage Rage, Neon Horizon, After Light, Own the Vibe, Into the Light, Midnight Coffee, Called by Grace");
 });
