@@ -58,7 +58,7 @@
         <h2>🎵 LISTEN BY GENRE</h2>
         <p class="section-subtitle">Organized playlists - Click a genre to explore!</p>
         
-        <!-- Genre Tabs - ALL 7 GENRES -->
+        <!-- Genre Tabs - ALL 8 GENRES -->
         <div class="genre-tabs">
             <button class="tab-btn" data-genre="synthwave">
                 <i class="fas fa-satellite-dish"></i> Synth Wave
@@ -78,12 +78,15 @@
             <button class="tab-btn" data-genre="trance">
                 <i class="fas fa-cloud"></i> Trance
             </button>
+            <button class="tab-btn" data-genre="lofi">
+                <i class="fas fa-coffee"></i> Lo-fi & Chill
+            </button>
             <button class="tab-btn" data-genre="gospel">
                 <i class="fas fa-star"></i> Gospel
             </button>
         </div>
         
-        <!-- Tab Content Container - ALL 7 PLAYLISTS -->
+        <!-- Tab Content Container - ALL 8 PLAYLISTS -->
         <div class="tab-content-container">
             <!-- Synth Wave Playlist -->
             <div class="tab-content" id="synthwave-tab">
@@ -165,7 +168,7 @@
                 </div>
             </div>
             
-            <!-- Trap Playlist - ADDED -->
+            <!-- Trap Playlist -->
             <div class="tab-content" id="trap-tab">
                 <h3><i class="fas fa-volume-up"></i> Trap Collection</h3>
                 <p class="genre-description">Heavy 808s, aggressive beats, hip-hop influenced</p>
@@ -185,7 +188,7 @@
                 </div>
             </div>
             
-            <!-- Trance Playlist - ADDED -->
+            <!-- Trance Playlist -->
             <div class="tab-content" id="trance-tab">
                 <h3><i class="fas fa-cloud"></i> Trance Collection</h3>
                 <p class="genre-description">Euphoric melodies, uplifting progressions, emotional journeys</p>
@@ -202,6 +205,26 @@
                 </div>
                 <div class="track-info">
                     <p><strong>Featured Track:</strong> "Into the Light" - Uplifting trance with euphoric melodies</p>
+                </div>
+            </div>
+            
+            <!-- Lo-fi Playlist - ADDED -->
+            <div class="tab-content" id="lofi-tab">
+                <h3><i class="fas fa-coffee"></i> Lo-fi & Chill Collection</h3>
+                <p class="genre-description">Relaxing beats, study music, chill vibes for focus</p>
+                
+                <div class="playlist-player">
+                    <iframe 
+                        width="100%" 
+                        height="300" 
+                        scrolling="no" 
+                        frameborder="no" 
+                        allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2174423147&color=%23f39c12">
+                    </iframe>
+                </div>
+                <div class="track-info">
+                    <p><strong>Featured Track:</strong> "Midnight Coffee" - Relaxing lo-fi beats for late nights</p>
                 </div>
             </div>
             
@@ -229,7 +252,8 @@
         <!-- Auto-Update Note -->
         <div class="auto-update-note">
             <p><i class="fas fa-sync-alt"></i> <strong>Auto-Update Feature:</strong> When I add tracks to SoundCloud playlists, they automatically appear here!</p>
-            <p><i class="fas fa-music"></i> <strong>Now Playing:</strong> 7 complete genre collections with featured tracks!</p>
+            <p><i class="fas fa-music"></i> <strong>Now Playing:</strong> 8 complete genre collections with featured tracks!</p>
+            <p><i class="fas fa-headphones"></i> <strong>Total Tracks:</strong> 8+ tracks across all genres</p>
         </div>
         
         <!-- Links -->
@@ -263,6 +287,7 @@
                         <li>Synth Wave & Synth Pop</li>
                         <li>EDM & Techno</li>
                         <li>Trap & Trance</li>
+                        <li>Lo-fi & Chill Beats</li>
                         <li>Gospel & Christmas Music</li>
                         <li>Custom Track Creation</li>
                     </ul>
@@ -281,6 +306,7 @@
                     <option>EDM Production</option>
                     <option>Trap Beat</option>
                     <option>Trance Track</option>
+                    <option>Lo-fi/Chill Beat</option>
                     <option>Gospel/Christmas Song</option>
                     <option>Mixing/Mastering</option>
                     <option>Vocal Recording</option>
@@ -299,7 +325,7 @@
             <a href="#contact">Contact</a> | 
             Made with ❤️ and 🔊
         </p>
-        <p class="footer-note">Professional Music Producer & Ghost Producer | 7+ Genre Specialist</p>
+        <p class="footer-note">Professional Music Producer & Ghost Producer | 8+ Genre Specialist</p>
     </footer>
 
     <script src="script.js"></script>
